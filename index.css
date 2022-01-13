@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  background: linear-gradient(to top, #f1f1f3, #2f3b4e);
+}
+
+.form-container {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.form-wrapper {
+  background-color: #fff;
+  width: 400px;
+  box-shadow: 2px 2px 25px 5px #333;
+  border-radius: 10px;
+  padding: 1rem;
+  line-height: 2;
+}
+.form-wrapper h3 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+.form-wrapper .form-group {
+  margin: 0.5rem 0;
+}
+.form-wrapper label {
+  display: block;
+  font-size: 18px;
+  color: rgb(61, 207, 226);
+}
+.form-wrapper input {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  outline: 0;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+input:focus {
+  border: 1px solid rgb(61, 207, 226);
+  box-shadow: 1px 1px #ccc;
+}
+input:focus:required:valid {
+  border: 1px solid rgb(16, 219, 16);
+}
+input:focus:required:invalid {
+  border: 1px solid rgb(219, 90, 16);
+}
+
+.form-wrapper .sign-in {
+  display: flex;
+  justify-content: flex-end;
+}
+.form-wrapper .sign-in span {
+  margin-right: 8px;
+}
+.form-group .btn {
+  display: block;
+  text-decoration: none;
+  background-color: orange;
+  text-align: center;
+  padding: 5px;
+  font-weight: bold;
+  color: #333;
+  border-radius: 5px;
+}
+
+.form-group .btn:hover{
+    background-color: rgb(189, 140, 49);
+    color: #fff;
+}
