@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #fff;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+h1 {
+  font-size: 2.8rem;
+  margin: 1rem  0;
+}
+h4 {
+  font-size: 1.8rem;
+}
+a {
+    text-decoration: none;
+    color: #34a1eb;
+}
+.container {
+  max-width: 1200px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.formContainer {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  width: 450px;
+  box-shadow: 2px 2px 25px 2px rgb(243, 241, 241);
+}
+
+form .form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  /* border:2px solid cyan; */
+  margin: 16px 0;
+}
+form .form-group span.form-helper{
+    margin-bottom: 8px;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+form label {
+    font-weight: bold;
+    font-size: 14px;
+}
+form input {
+  display: inline-block;
+  width: 100%;
+  margin: 8px 0;
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+
+form .form-group .number {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+} 
+form .form-group .number input[type = tel]{
+    flex: 2;
+    margin-right: 8px;
+}
+form .form-group .number input[type = text]{
+    flex: 10;
+}
+form input[type = submit]{
+    background-color: rgb(226, 174, 76);
+    border: 1px solid rgb(165, 160, 160);
+    padding: 12px;
+    color: #333;
+    font-size: 16px;
+}
+form input[type = submit]:hover{
+    background-color: orange;
+}
+form p.data{
+    margin-bottom: 1rem;
+}

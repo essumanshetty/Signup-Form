@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup | Clone</title>
+    <link rel="stylesheet" href="signup.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Logo</h1>
+      <!-- Form  -->
+      <div class="formContainer">
+        <h4>Create Account</h4>
+        <form >
+          <div class="form-group">
+            <label for="name">Your name</label>
+            <input type="text" name="name" id="name" />
+            <span class="form-helper">Enter your name</span>
+          </div>
+          <div class="form-group">
+            <label for="number">Mobile Number</label>
+            <div class="number">
+              <input type="tel" />
+              <input type="text" name="number" id="number" />
+            </div>
+            <span class="form-helper">Enter your mobile number</span>
+          </div>
+          <div class="form-group">
+            <label for="email">Email(optional)</label>
+            <input type="text" name="email" id="email" />
+          </div>
+          <div class="form-group">
+            <label for="pwd">Password</label>
+            <input type="text" name="pwd" id="pwd" />
+            <span class="form-helper"
+              >Enter your password (At least 6 characters)</span
+            >
+          </div>
+          <p>We will send you a text to verify your phone.</p>
+          <p class="data">Message and Data rates may apply.</p>
+
+          <input type="submit" value="Continue" />
+        </form>
+        <span>Already have an account? <a href="index.html">Sign in</a></span>
+      </div>
+    </div>
+  </body>
+</html>

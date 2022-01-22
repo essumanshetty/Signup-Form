@@ -53,6 +53,10 @@ input:focus:required:valid {
 input:focus:required:invalid {
   border: 1px solid rgb(219, 90, 16);
 }
+.helper{
+  font-size: 12px;
+  color: gray;
+}
 
 .form-wrapper .sign-in {
   display: flex;
