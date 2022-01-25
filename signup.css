@@ -7,21 +7,23 @@
 html,
 body {
   background-color: #fff;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  /* font-family: Georgia, "Times New Roman", Times, serif; */
+  font-family: 'Lato', sans-serif;
 }
 h1 {
-  font-size: 2.8rem;
-  margin: 1rem  0;
+  font-size: 2.3rem;
+  margin: 1rem 0;
 }
 h4 {
   font-size: 1.8rem;
 }
 a {
-    text-decoration: none;
-    color: #34a1eb;
+  text-decoration: none;
+  color: #34a1eb;
 }
 .container {
   max-width: 1200px;
+  margin: auto;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -40,18 +42,21 @@ form .form-group {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+
   width: 100%;
   /* border:2px solid cyan; */
   margin: 16px 0;
 }
-form .form-group span.form-helper{
-    margin-bottom: 8px;
-    font-size: 13px;
-    letter-spacing: 1px;
+form .form-group span.form-helper {
+  margin-bottom: 8px;
+  font-size: 13px;
+  letter-spacing: 1px;
+  display: none;
+  color: red;
 }
 form label {
-    font-weight: bold;
-    font-size: 14px;
+  font-weight: bold;
+  font-size: 14px;
 }
 form input {
   display: inline-block;
@@ -60,30 +65,40 @@ form input {
   padding: 10px;
   border: 1px solid #333;
   border-radius: 5px;
+  font-size: 15px;
 }
 
 form .form-group .number {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-} 
-form .form-group .number input[type = tel]{
-    flex: 2;
-    margin-right: 8px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
-form .form-group .number input[type = text]{
-    flex: 10;
+form .form-group .number input[type="tel"] {
+  flex: 2;
+  margin-right: 8px;
 }
-form input[type = submit]{
-    background-color: rgb(226, 174, 76);
-    border: 1px solid rgb(165, 160, 160);
-    padding: 12px;
-    color: #333;
-    font-size: 16px;
+form .form-group .number input[type="text"] {
+  flex: 10;
 }
-form input[type = submit]:hover{
-    background-color: orange;
+form input[type="submit"] {
+  background-color: rgb(226, 174, 76);
+  border: 1px solid rgb(165, 160, 160);
+  padding: 12px;
+  color: #333;
+  font-size: 16px;
 }
-form p.data{
-    margin-bottom: 1rem;
+form input[type="submit"]:hover {
+  background-color: orange;
+}
+form p.data {
+  margin-bottom: 1rem;
+}
+
+form select {
+  height: 37px;
+  width: 100px;
+  margin-top: 8px;
+  margin-right: 8px;
+  border: 1px solid #333;
+  border-radius: 5px;
 }

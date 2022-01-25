@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Signup | Clone</title>
     <link rel="stylesheet" href="signup.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="container">
@@ -13,7 +17,7 @@
       <!-- Form  -->
       <div class="formContainer">
         <h4>Create Account</h4>
-        <form >
+        <form action="javascript:void(0)">
           <div class="form-group">
             <label for="name">Your name</label>
             <input type="text" name="name" id="name" />
@@ -22,7 +26,14 @@
           <div class="form-group">
             <label for="number">Mobile Number</label>
             <div class="number">
-              <input type="tel" />
+              <!-- <input type="tel" /> -->
+              <select name="countryCode">
+                <option value="61">Australia (+61)</option>
+                <option value="91" selected>India (+91)</option>
+                <option value="32">Belgium (+32)</option>
+                <option value="385">Coratia (+385)</option>
+                <option value="231">Liberia (+231)</option>
+              </select>
               <input type="text" name="number" id="number" />
             </div>
             <span class="form-helper">Enter your mobile number</span>
@@ -33,7 +44,12 @@
           </div>
           <div class="form-group">
             <label for="pwd">Password</label>
-            <input type="text" name="pwd" id="pwd" />
+            <input
+              type="text"
+              name="pwd"
+              id="pwd"
+              placeholder="At least 6 characters"
+            />
             <span class="form-helper"
               >Enter your password (At least 6 characters)</span
             >
@@ -46,5 +62,6 @@
         <span>Already have an account? <a href="index.html">Sign in</a></span>
       </div>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
